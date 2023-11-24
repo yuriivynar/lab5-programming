@@ -1,5 +1,6 @@
 # lab5-programming
 my five  lab of programming
 
-Створити клас TimeConverter, який дозволяє переводити час у форматі hh:mm:ss у кількість секунд і навпаки. 
-Використати перевантаження методу (наприклад outputConvertedTime).
+Variant 2
+
+I need create a TimeConverter class that allows me to convert time in the format hh:mm:ss to the number of seconds and vice versa
