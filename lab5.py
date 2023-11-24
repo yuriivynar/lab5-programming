@@ -2,7 +2,9 @@ class TimeConverter:
 
     def __init__(self, time = ""):
         self.time = time
-    
+   """
+   create initialisator
+   """
     def outputConvertedTime(self):
       if ":" in self.time:
          hours, minutes, seconds = map(int, self.time.split(':'))
@@ -13,7 +15,9 @@ class TimeConverter:
          hours, remainder = divmod(total_seconds, 3600)
          minutes, seconds = divmod(remainder, 60)
          return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
-        
+     """
+     create method which convert time
+     """
     def __del__(self): #destructor
         print(f"TimeConverter {self.time} is destructed")
 
@@ -25,4 +29,7 @@ def main():
     time_converter = TimeConverter("156231")
     seconds = time_converter.outputConvertedTime()
     print(f"{time_converter.time} секунд = {seconds}")
+"""
+the method sets the parameters that will be converted
+"""
 main()
